@@ -123,10 +123,6 @@ const STICKY_SIDEBAR_BOTTOM_PAGE_OFFSET_CSS = `${
   FOOTER_HEIGHT_PX + MAIN_VERTICAL_PADDING_PX / 2 + 16
 }px`; // Footer + main-padding-bottom + some buffer
 
-// Target minimum height for the right content section (e.g., for 2 rows of cards)
-const RIGHT_SECTION_TARGET_MIN_CONTENT_HEIGHT =
-  FIXED_CARD_HEIGHT_NUM * 2 + CARD_GAP_NUM;
-
 export default function Home() {
   const [query, setQuery] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
