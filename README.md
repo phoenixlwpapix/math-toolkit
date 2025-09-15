@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📐📊 数理化工具箱 APP
 
-## Getting Started
+一个为小初中学生打造的 **在线数理化学习辅助工具**，界面采用卡片式设计，每个卡片代表一个具体问题或计算模块。  
+目标是帮助学生快速解决日常学习中的计算与练习问题，并逐步扩展到更复杂的应用场景。
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ 功能模块
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+目前已实现/计划中的功能包括：
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 数学
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🔹 小数运算
+  - 小数乘法（decimal-mul）
+  - 小数除法（decimal-div）
+- 🔹 方程
+  - 简易方程求解（simple-eq）
+- 🔹 因数与倍数
+  - 判断因数、公因数、公倍数
+- 🔹 分数运算
+  - 分数加减法（含通分、约分，展示中间步骤）
+  - 分数乘除法
+  - 分数大小比较
+- 🔹 分数性质
+  - 分数约分 / 最简分数
 
-## Learn More
+### 物理（计划中）
 
-To learn more about Next.js, take a look at the following resources:
+- 单位换算
+- 简单公式计算（速度、密度、压强等）
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 化学（计划中）
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 元素周期表查询
+- 化学方程式配平助手
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🖥️ 技术栈
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **前端框架**：Next.js + React
+- **样式**：Tailwind CSS（蓝色主题风格）
+- **组件库**：shadcn/ui + lucide-react
+- **状态管理**：React Hooks / Context
+
+---
+
+## 🚀 使用方法
+
+1. 克隆本项目：
+   ```bash
+   git clone https://github.com/your-username/math-physics-chemistry-toolbox.git
+   cd math-physics-chemistry-toolbox
+   ```

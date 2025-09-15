@@ -261,35 +261,35 @@ export default function Home() {
                 "bg-orange-100 text-orange-700 border-orange-300";
               levelColors["困难"] = "bg-red-100 text-red-700 border-red-300";
               return (
-                <Link
-                  key={p.path}
-                  href={`/${p.path}`}
-                  className="flex flex-col bg-white border border-gray-200 p-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden"
-                  style={{ height: `${FIXED_CARD_HEIGHT_NUM}px` }}
-                >
-                  <h3 className="text-lg font-bold text-blue-700 mb-1 pb-1 flex-shrink-0">
-                    {p.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-3 flex-grow overflow-hidden">
-                    {p.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-auto pt-2 border-t border-gray-100 flex-shrink-0">
-                    <span
-                      className={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full select-none border ${
-                        categoryColors[p.category] ||
-                        "bg-gray-100 text-gray-700 border-gray-300"
-                      }`}
-                    >
-                      {p.category}
-                    </span>
-                    <span
-                      className={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full select-none border ${
-                        levelColors[p.level] ||
-                        "bg-gray-100 text-gray-700 border-gray-300"
-                      }`}
-                    >
-                      {p.level}
-                    </span>
+                <Link key={p.path} href={`/${p.path}`}>
+                  <div
+                    className="flex flex-col bg-white border border-gray-200 p-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden"
+                    style={{ height: `${FIXED_CARD_HEIGHT_NUM}px` }}
+                  >
+                    <h3 className="text-lg font-bold text-blue-700 mb-1 pb-1 flex-shrink-0">
+                      {p.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-3 flex-grow overflow-hidden">
+                      {p.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2 mt-auto pt-2 border-t border-gray-100 flex-shrink-0">
+                      <span
+                        className={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full select-none border ${
+                          categoryColors[p.category] ||
+                          "bg-gray-100 text-gray-700 border-gray-300"
+                        }`}
+                      >
+                        {p.category}
+                      </span>
+                      <span
+                        className={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full select-none border ${
+                          levelColors[p.level] ||
+                          "bg-gray-100 text-gray-700 border-gray-300"
+                        }`}
+                      >
+                        {p.level}
+                      </span>
+                    </div>
                   </div>
                 </Link>
               );

@@ -70,12 +70,10 @@ export default function ProblemCard({ title, description, inputFields, solve }: 
       {/* 1. Added min-w-[value] classes. Adjust as needed. */}
       {/*    Using sm: and md: prefixes for responsiveness if desired. */}
       {/*    Example: min-w-[320px] for very small screens, sm:min-w-[450px] for small, md:min-w-[500px] for medium. */}
-
       <h1 className="text-2xl font-bold text-center text-blue-800 mt-8 mb-4">{title}</h1> {/* Added mt-8 to give space for absolute positioned link */}
       {description && (
         <p className="text-gray-700 text-center mb-6">{description}</p>
       )}
-
       <div className="space-y-4">
         {inputFields.map((field) => (
           <div key={field.key}>
@@ -108,11 +106,11 @@ export default function ProblemCard({ title, description, inputFields, solve }: 
         </button>
 
         {result && !error && ( // Only show result if no error
-          <div className="mt-6 p-4 bg-green-50 rounded-lg">
+          (<div className="mt-6 p-4 bg-green-50 rounded-lg">
             <p className="text-center text-lg font-semibold text-green-700">
               答案：<span className="text-xl text-purple-700">{result}</span>
             </p>
-          </div>
+          </div>)
         )}
       </div>
     </div>

@@ -240,14 +240,14 @@ export default function AverageCalculatorVisualizer() {
                   style={{ width: `${Y_AXIS_WIDTH}px`, height: `${MAX_BAR_HEIGHT}px`, paddingRight: '5px' }}
                 >
                   {yAxisTicks.slice().reverse().map(tick => ( // Render from top to bottom (value-wise)
-                    <div
+                    (<div
                       key={`tick-${tick.value}`}
                       className="text-xs text-gray-500 flex items-center"
                       style={{ height: '1px' }} // For positioning text relative to this point
                     >
                       <span className="transform -translate-y-1/2">{formatNumber(tick.value, tick.value % 1 !== 0 ? 1 : 0)}</span>
                       <div className="w-1.5 h-px bg-gray-400 ml-1"></div>
-                    </div>
+                    </div>)
                   ))}
                 </div>
 
