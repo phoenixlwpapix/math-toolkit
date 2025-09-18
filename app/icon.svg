@@ -1,0 +1,44 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 提手 (深灰色) -->
+  <path 
+    d="M168 88V64C168 46.3269 153.673 32 136 32H120C102.327 32 88 46.3269 88 64V88" 
+    fill="#4A5568"
+  />
+
+  <!-- 工具箱主体 (主橙色) -->
+  <path 
+    d="M216 96H40C31.1634 96 24 103.163 24 112V200C24 213.255 34.7452 224 48 224H208C221.255 224 232 213.255 232 200V112C232 103.163 224.837 96 216 96Z" 
+    fill="#DD6B20"
+  />
+  
+  <!-- 工具箱顶盖 (浅橙色，增加层次感) -->
+  <path 
+    d="M208 96H48L64 80H192L208 96Z" 
+    fill="#F6AD55"
+  />
+
+  <!-- 交叉的工具 (白色，高对比度) -->
+  <g transform="translate(128, 160) rotate(0) scale(1)">
+    <!-- 圆规 -->
+    <path 
+      d="M-44 -44 L0 0 L44 -44 M-32 -12 L32 -12" 
+      stroke="white" 
+      stroke-width="14" 
+      stroke-linecap="round" 
+      stroke-linejoin="round"
+    />
+    <!-- 直尺 -->
+    <rect 
+      x="-60" y="-4" width="120" height="28" rx="8" 
+      fill="white" 
+      transform="rotate(90 0 10)"
+    />
+    <!-- 直尺上的刻度 -->
+    <path d="M-8 28 L-8 44 M0 28 L0 44 M8 28 L8 44" 
+      stroke="#DD6B20" 
+      stroke-width="6" 
+      stroke-linecap="round" 
+      transform="rotate(90 0 10)"
+    />
+  </g>
+</svg>

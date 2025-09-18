@@ -8,9 +8,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Math Toolkit",
   description: "Created by Kevin",
-  icons: {
-    icon: "/favicon.png", // 或 "/favicon.ico"
-  },
 };
 
 export default function RootLayout({
